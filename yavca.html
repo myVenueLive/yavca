@@ -1,0 +1,44 @@
+<head>
+    <title>Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	{{> navbar}}
+	{{> frontpage}}
+</body>
+
+<template name="navbar">
+	<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<a class="navbar-brand" href="#">
+		        	<img id="logo-img" alt="YACVA" src="images/logo.png">
+		     	</a>
+		    </div>
+  		</div>
+	</nav>
+</template>
+
+<template name="frontpage">
+	<div class="container-fluid">
+		<p class="lead text-centered text-double">
+			Welcome at Yet Another Video Chat Application!
+		</p>
+		<div class="half-width margin-auto">
+			<img class="img-responsive" alt="YAVCA" src="images/logo.png">
+		</div>
+		<div class="margin-auto text-centered" style="padding:20px 0;">
+			<button id="button-login" type="button" class="btn btn-primary btn-lg" style="width: 150px;">Login</button>
+			<button id="button-register" type="button" class="btn btn-success btn-lg" style="width: 150px;">Register</button>
+		</div>
+	</div>
+
+	<ul>
+	{{#each player}}
+		<li>
+    	{{name}}: {{score}}
+    	</li>
+	{{/each}}
+	</ul>
+</template>
