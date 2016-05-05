@@ -1,0 +1,15 @@
+<template name="frontpageLogedin">
+	<div class="container-fluid">
+		<p class="lead text-centered text-double">
+			Welcome {{myemail}}! You are logged in!
+		</p>
+	</div>
+
+	<ul>
+	{{#each player}}
+		<li>
+    	{{name}}: {{score}}
+    	</li>
+	{{/each}}
+	</ul>
+</template>

@@ -21,3 +21,12 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 twbs:bootstrap
 session
+accounts-password
+ian:accounts-ui-bootstrap-3
+accounts-facebook
+mizzao:user-status
+check
+iron:router
+selaias:accounts-entry
+manuelschoebel:wait-on-lib
+email

@@ -1,0 +1,7 @@
+<template name="frontpage">
+	{{#if currentUser}}
+		{{> frontpageLogedin}}
+	{{else}}
+		{{> frontpageAnonymous}}
+	{{/if}}
+</template>
